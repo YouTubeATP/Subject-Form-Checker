@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Form Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <form name="prefs" onsubmit="return handler()">
+        <h1>General preference</h1>
+        <h2>Indicate your preference of the 15 subjects from "1" to "15".<br>("1" means the elective subject that you prefer the most.)</h2>
+        <label for="subj1">B.A.F.S. (Acc)</label><br>
+        <input type="number" min="1" max="15" id="subj1"><br>
+        <label for="subj2">B.A.F.S. (Mgt)</label><br>
+        <input type="number" min="1" max="15" id="subj2"><br>
+        <label for="subj3">Biology</label><br>
+        <input type="number" min="1" max="15" id="subj3"><br>
+        <label for="subj4">Chemistry</label><br>
+        <input type="number" min="1" max="15" id="subj4"><br>
+        <label for="subj5">Chi History</label><br>
+        <input type="number" min="1" max="15" id="subj5"><br>
+        <label for="subj6">Chi Literature</label><br>
+        <input type="number" min="1" max="15" id="subj6"><br>
+        <label for="subj7">Economics</label><br>
+        <input type="number" min="1" max="15" id="subj7"><br>
+        <label for="subj8">Ethics & R.S.</label><br>
+        <input type="number" min="1" max="15" id="subj8"><br>
+        <label for="subj9">Geography</label><br>
+        <input type="number" min="1" max="15" id="subj9"><br>
+        <label for="subj10">History</label><br>
+        <input type="number" min="1" max="15" id="subj10"><br>
+        <label for="subj11">I.C.T.</label><br>
+        <input type="number" min="1" max="15" id="subj11"><br>
+        <label for="subj12">M1</label><br>
+        <input type="number" min="1" max="15" id="subj12"><br>
+        <label for="subj13">PE</label><br>
+        <input type="number" min="1" max="15" id="subj13"><br>
+        <label for="subj14">Physics</label><br>
+        <input type="number" min="1" max="15" id="subj14"><br>
+        <label for="subj15">Visual Arts</label><br>
+        <input type="number" min="1" max="15" id="subj15">
+
+        <h1>X1, X2, X3 preference</h1>
+        <h2>Indicate your preference for X1, X2 and X3 column from "1" to "7' or "8". You should write "1" for the subject you prefer the most even though you may have chosen it in the previous column already.</h2>
+        <fieldset>
+            <legend>X1 preference</legend>
+            <label for="x1subj1">B.A.F.S. (Mgt)</label><br>
+            <input type="number" min="1" max="7" id="x1subj1"><br>
+            <label for="x1subj2">Biology</label><br>
+            <input type="number" min="1" max="7" id="x1subj2"><br>
+            <label for="x1subj3">Chemistry</label><br>
+            <input type="number" min="1" max="7" id="x1subj3"><br>
+            <label for="x1subj4">Ethics & R.S.</label><br>
+            <input type="number" min="1" max="7" id="x1subj4"><br>
+            <label for="x1subj5">Geography</label><br>
+            <input type="number" min="1" max="7" id="x1subj5"><br>
+            <label for="x1subj6">I.C.T.</label><br>
+            <input type="number" min="1" max="7" id="x1subj6"><br>
+            <label for="x1subj7">Physics</label><br>
+            <input type="number" min="1" max="7" id="x1subj7">
+        </fieldset>
+        <fieldset>
+            <legend>X2 preference</legend>
+            <label for="x2subj1">B.A.F.S. (Acc)</label><br>
+            <input type="number" min="1" max="7" id="x2subj1"><br>
+            <label for="x2subj2">Chemistry</label><br>
+            <input type="number" min="1" max="7" id="x2subj2"><br>
+            <label for="x2subj3">Chi Literature</label><br>
+            <input type="number" min="1" max="7" id="x2subj3"><br>
+            <label for="x2subj4">Economics</label><br>
+            <input type="number" min="1" max="7" id="x2subj4"><br>
+            <label for="x2subj5">History</label><br>
+            <input type="number" min="1" max="7" id="x2subj5"><br>
+            <label for="x2subj6">P.E.</label><br>
+            <input type="number" min="1" max="7" id="x2subj6"><br>
+            <label for="x2subj7">Physics</label><br>
+            <input type="number" min="1" max="7" id="x2subj7">
+        </fieldset>
+        <fieldset>
+            <legend>X3 preference</legend>
+            <label for="x3subj1">Biology</label><br>
+            <input type="number" min="1" max="8" id="x3subj1"><br>
+            <label for="x3subj2">Chemistry</label><br>
+            <input type="number" min="1" max="8" id="x3subj2"><br>
+            <label for="x3subj3">Chi History</label><br>
+            <input type="number" min="1" max="8" id="x3subj3"><br>
+            <label for="x3subj4">Economics</label><br>
+            <input type="number" min="1" max="8" id="x3subj4"><br>
+            <label for="x3subj5">I.C.T.</label><br>
+            <input type="number" min="1" max="8" id="x3subj5"><br>
+            <label for="x3subj6">M1</label><br>
+            <input type="number" min="1" max="8" id="x3subj6"><br>
+            <label for="x3subj7">Physics</label><br>
+            <input type="number" min="1" max="8" id="x3subj7"><br>
+            <label for="x3subj8">Visual Arts</label><br>
+            <input type="number" min="1" max="8" id="x3subj8">
+        </fieldset>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
